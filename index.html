@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskar Agraj Agro Private Limited - Premium Indian Spices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80') center/cover;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .spice-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1596097557971-9d3224578fb5?auto=format&fit=crop&q=80') center/cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center">
+                        <span class="text-2xl font-bold text-yellow-600">Bhaskar Agraj Agro</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-yellow-600 px-3 py-2 font-medium transition duration-300">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-yellow-600 px-3 py-2 font-medium transition duration-300">About</a>
+                        <a href="#products" class="text-gray-700 hover:text-yellow-600 px-3 py-2 font-medium transition duration-300">Products</a>
+                        <a href="#quality" class="text-gray-700 hover:text-yellow-600 px-3 py-2 font-medium transition duration-300">Quality</a>
+                        <a href="#contact" class="text-gray-700 hover:text-yellow-600 px-3 py-2 font-medium transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="bi bi-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 px-3 py-2 rounded-md font-medium">Home</a>
+                <a href="#about" class="block text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 px-3 py-2 rounded-md font-medium">About</a>
+                <a href="#products" class="block text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 px-3 py-2 rounded-md font-medium">Products</a>
+                <a href="#quality" class="block text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 px-3 py-2 rounded-md font-medium">Quality</a>
+                <a href="#contact" class="block text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 px-3 py-2 rounded-md font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-white">
+        <div class="text-center max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Indian Spices for Global Markets</h1>
+            <p class="text-xl md:text-2xl mb-10">Harvesting trust through quality and authenticity since 2025</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-yellow-600 text-white px-8 py-3 rounded-full hover:bg-yellow-700 transition duration-300 font-medium">
+                    Explore Products
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-yellow-600 transition duration-300 font-medium">
+                    Contact Us
+                </a>
+            </div>
+            <div class="mt-16 flex flex-wrap justify-center gap-6">
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FSSAI_logo.svg/1200px-FSSAI_logo.svg.png" alt="FSSAI Certified" class="h-12 mx-auto">
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USDA_organic_seal.svg/1024px-USDA_organic_seal.svg.png" alt="USDA Organic" class="h-12 mx-auto">
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg">
+                    <img src="https://www.iso.org/files/live/sites/isoorg/files/about%20ISO/iso-logo.svg" alt="ISO Certified" class="h-12 mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Harvesting Trust Since 2025</h3>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        We are a new and dynamic spice export startup from India, committed to delivering high-quality and authentic Indian spices to global markets. Our mission is to establish strong business relationships by ensuring premium quality, competitive pricing, and timely delivery.
+                    </p>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        At Bhaskar Agraj Agro we believe in harvesting trust and are committed to high quality delivery. Our team works day in and out to ensure high quality products are delivered on time following stringent quality checks that ensure happy and satisfied customers.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-yellow-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <i class="bi bi-award text-4xl text-yellow-600 mb-4"></i>
+                            <h3 class="font-bold text-xl text-gray-800">Premium Quality</h3>
+                            <p class="text-gray-600 mt-2">Direct from farms</p>
+                        </div>
+                        <div class="bg-yellow-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                            <i class="bi bi-globe text-4xl text-yellow-600 mb-4"></i>
+                            <h3 class="font-bold text-xl text-gray-800">Global Exports</h3>
+                            <p class="text-gray-600 mt-2">Worldwide shipping</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80" alt="About Bhaskar Agraj Agro" class="rounded-lg shadow-xl w-full object-cover h-[500px]">
+                        <div class="absolute -bottom-6 -right-6 bg-yellow-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
+                            <p class="text-3xl font-bold">2025</p>
+                            <p>Established</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Product Categories</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Explore our premium range of authentic Indian spices and products, each carefully selected and processed to maintain their natural flavor and aroma.</p>
+            </div>
+            
+            <!-- Product Category Tabs -->
+            <div class="mb-10">
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button class="category-btn active px-6 py-3 rounded-full text-white bg-yellow-600 font-medium" data-category="whole-spices">Whole Spices</button>
+                    <button class="category-btn px-6 py-3 rounded-full text-gray-800 bg-gray-200 font-medium hover:bg-gray-300 transition" data-category="ground-spices">Ground Spices</button>
+                    <button class="category-btn px-6 py-3 rounded-full text-gray-800 bg-gray-200 font-medium hover:bg-gray-300 transition" data-category="dried-fruits">Dried Fruits & Specialty Items</button>
+                </div>
+                
+                <!-- Whole Spices Category -->
+                <div id="whole-spices" class="category-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1615484477201-9f4953220659?auto=format&fit=crop&q=80" alt="Cumin Seeds" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Cumin Seeds</h3>
+                            <p class="text-gray-600">Aromatic seeds with a warm, earthy flavor, commonly used in Indian, Middle Eastern, and Latin American cuisine.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1599909631489-ea7e3f14e2d4?auto=format&fit=crop&q=80" alt="Coriander Seeds" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Coriander Seeds</h3>
+                            <p class="text-gray-600">Slightly citrusy and nutty in taste, widely used in spice blends and curries.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1615484477778-664af86c4406?auto=format&fit=crop&q=80" alt="Turmeric Fingers" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Turmeric Fingers</h3>
+                            <p class="text-gray-600">Bright yellow rhizomes known for their earthy flavor and health benefits, used in curries and medicinal preparations.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ground Spices Category -->
+                <div id="ground-spices" class="category-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1620574387735-3921fa6522e5?auto=format&fit=crop&q=80" alt="Turmeric Powder" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Turmeric Powder</h3>
+                            <p class="text-gray-600">A staple in Indian cuisine, known for its earthy, slightly bitter taste and vibrant color.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1596359900103-a572b7f204b8?auto=format&fit=crop&q=80" alt="Red Chilli Powder" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Red Chilli Powder</h3>
+                            <p class="text-gray-600">Made from dried red chilies, adds heat and spice to dishes.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1589736792631-57cc7cb1447b?auto=format&fit=crop&q=80" alt="Garam Masala" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Garam Masala</h3>
+                            <p class="text-gray-600">A blend of spices that add warmth and complexity to Indian dishes.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dried Fruits Category -->
+                <div id="dried-fruits" class="category-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1583035920922-cbb3a9f49ac6?auto=format&fit=crop&q=80" alt="Raisins" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Raisins</h3>
+                            <p class="text-gray-600">Naturally sweet dried grapes, used in desserts, snacks, and cooking.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1567526320688-5a3e8489b5c0?auto=format&fit=crop&q=80" alt="Saffron" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Saffron</h3>
+                            <p class="text-gray-600">A prized spice with a floral, honey-like aroma, used in luxury dishes.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden product-card transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80" alt="Vanilla Beans" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Vanilla Beans</h3>
+                            <p class="text-gray-600">Fragrant and flavorful, used in baking and gourmet preparations.</p>
+                            <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
+                                <span class="text-sm text-gray-500">Available in multiple sizes</span>
+                                <button class="text-yellow-600 hover:text-yellow-700"><i class="bi bi-arrow-right text-xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-yellow-600 text-white px-8 py-3 rounded-full hover:bg-yellow-700 transition duration-300 font-medium">
+                    Request Product Catalog 
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Packaging Options</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We offer flexible packaging options to meet your specific requirements.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-yellow-50 rounded-lg p-8 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <div class="h-20 w-20 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-box-seam text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Retail Packaging</h3>
+                    <p class="text-gray-600 mb-4">Perfect for retail distribution</p>
+                    <ul class="text-gray-700 space-y-2 mb-4">
+                        <li>100g</li>
+                        <li>200g</li>
+                        <li>500g</li>
+                        <li>1kg</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-lg p-8 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <div class="h-20 w-20 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-truck text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Bulk Packaging</h3>
+                    <p class="text-gray-600 mb-4">Ideal for commercial use</p>
+                    <ul class="text-gray-700 space-y-2 mb-4">
+                        <li>5kg</li>
+                        <li>10kg</li>
+                        <li>25kg</li>
+                        <li>50kg</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-lg p-8 text-center shadow-sm hover:shadow-md transition duration-300">
+                    <div class="h-20 w-20 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-gear text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Custom Packaging</h3>
+                    <p class="text-gray-600 mb-4">Tailored to your specifications</p>
+                    <ul class="text-gray-700 space-y-2 mb-4">
+                        <li>Private labeling</li>
+                        <li>Custom weights</li>
+                        <li>Branded packaging</li>
+                        <li>Special requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="spice-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Quality Assurance</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-black bg-opacity-50 backdrop-blur-sm p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-6">Quality is Our Priority</h3>
+                    <p class="mb-6">
+                        At Bhaskar Agraj Agro, we implement strict quality control measures throughout our supply chain to ensure that only the finest spices reach our customers.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="bi bi-check-circle-fill text-yellow-500 text-xl mt-1"></i>
+                            <span>Stringent quality control measures from sourcing to packaging</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="bi bi-check-circle-fill text-yellow-500 text-xl mt-1"></i>
+                            <span>Laboratory testing for purity, authenticity, and contamination</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="bi bi-check-circle-fill text-yellow-500 text-xl mt-1"></i>
+                            <span>Hygienic processing with modern equipment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="bi bi-check-circle-fill text-yellow-500 text-xl mt-1"></i>
+                            <span>Compliance with international food safety standards</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="bi bi-check-circle-fill text-yellow-500 text-xl mt-1"></i>
+                            <span>Traceability through the supply chain</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FSSAI_logo.svg/1200px-FSSAI_logo.svg.png" alt="FSSAI Certified" class="h-16 mx-auto mb-4">
+                        <h4 class="font-bold">FSSAI Certified</h4>
+                        <p class="text-sm mt-2">Food Safety Standards Authority of India</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/USDA_organic_seal.svg/1024px-USDA_organic_seal.svg.png" alt="USDA Organic" class="h-16 mx-auto mb-4">
+                        <h4 class="font-bold">USDA Organic</h4>
+                        <p class="text-sm mt-2">United States Department of Agriculture</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg text-center">
+                        <img src="https://www.iso.org/files/live/sites/isoorg/files/about%20ISO/iso-logo.svg" alt="ISO Certified" class="h-16 mx-auto mb-4">
+                        <h4 class="font-bold">ISO Certified</h4>
+                        <p class="text-sm mt-2">International Organization for Standardization</p>
+                    </div>
+                    
+                    <div class="bg-black bg-opacity-50 backdrop-blur-sm p-6 rounded-lg text-center">
+                        <i class="bi bi-award-fill text-yellow-500 text-5xl mb-4"></i>
+                        <h4 class="font-bold">Quality Guarantee</h4>
+                        <p class="text-sm mt-2">100% satisfaction guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Partner with Bhaskar Agraj Agro for a reliable supply chain of premium Indian spices.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-award text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-3">Premium Quality</h3>
+                    <p class="text-gray-600">Finest quality spices sourced directly from farms</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-currency-dollar text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-3">Competitive Pricing</h3>
+                    <p class="text-gray-600">Best value for premium quality products</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-clock text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-3">Timely Delivery</h3>
+                    <p class="text-gray-600">Reliable and prompt shipping worldwide</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition duration-300">
+                    <div class="h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="bi bi-gear text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-3">Customized Solutions</h3>
+                    <p class="text-gray-600">Tailored products and packaging to meet your needs</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-yellow-600 rounded-lg shadow-xl overflow-hidden">
+                <div class="p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-white mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-4">Ready to Place an Order?</h3>
+                        <p class="text-yellow-100">Contact us today to discuss your requirements and get a quote.</p>
+                    </div>
+                    <a href="#contact" class="bg-white text-yellow-600 px-8 py-3 rounded-full font-medium hover:bg-yellow-50 transition duration-300">
+                        Contact Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We look forward to being your trusted spice supplier! Reach out to us with any questions or inquiries.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <form id="contact-form" class="space-y-6 bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-4">Send us a Message</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium">First Name*</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2 font-medium">Last Name*</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Company Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Email*</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Message*</label>
+                            <textarea required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-yellow-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-yellow-700 transition duration-300 flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i class="bi bi-send ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-yellow-100 h-12 w-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="bi bi-geo-alt text-yellow-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Address</h4>
+                                    <p class="text-gray-600">D – 409 Shayona Sarvopari, Ghatlodia, Ahmedabad, Gujarat, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-yellow-100 h-12 w-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="bi bi-envelope text-yellow-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Email</h4>
+                                    <p class="text-gray-600">info@bhaskaragrajagro.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-yellow-100 h-12 w-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="bi bi-globe text-yellow-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-lg mb-1">Website</h4>
+                                    <p class="text-gray-600">www.bhaskaragrajagro.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-lg overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.0450750627384!2d72.5267339!3d23.064111399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b267ef7e2a1%3A0x84b081be7c4c9dcb!2sShayona%20Sarvopari!5e0!3m2!1sen!2sin!4v1652345678901!5m2!1sen!2sin" 
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Top Footer -->
+            <div class="grid md:grid-cols-4 gap-8 py-16">
+                <div class="col-span-1">
+                    <h3 class="text-2xl font-bold mb-6">Bhaskar Agraj Agro</h3>
+                    <p class="text-gray-400 mb-6">Premium Indian spices exporter, dedicated to quality, authenticity, and customer satisfaction.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 transition duration-300">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 transition duration-300">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 transition duration-300">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-600 transition duration-300">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Whole Spices</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ground Spices</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dried Fruits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Specialty Items</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Organic Products</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#quality" class="text-gray-400 hover:text-white transition">Quality</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <i class="bi bi-geo-alt text-yellow-600"></i>
+                            <span class="text-gray-400">D – 409 Shayona Sarvopari, Ghatlodia, Ahmedabad, Gujarat, India</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bi bi-envelope text-yellow-600"></i>
+                            <span class="text-gray-400">info@bhaskaragrajagro.com</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="bi bi-globe text-yellow-600"></i>
+                            <span class="text-gray-400">www.bhaskaragrajagro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2023 Bhaskar Agraj Agro Private Limited. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" class="fixed bottom-6 right-6 bg-yellow-600 text-white h-12 w-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <i class="bi bi-arrow-up text-xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                // Close mobile menu after clicking
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission handling
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+        
+        // Product category tabs
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const categoryContents = document.querySelectorAll('.category-content');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-yellow-600', 'text-white');
+                    b.classList.add('bg-gray-200', 'text-gray-800');
+                });
+                
+                // Add active class to clicked button
+                btn.classList.add('active', 'bg-yellow-600', 'text-white');
+                btn.classList.remove('bg-gray-200', 'text-gray-800');
+                
+                // Hide all content
+                categoryContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                
+                // Show selected content
+                const target = btn.getAttribute('data-category');
+                document.getElementById(target).classList.remove('hidden');
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+            
+            // Shrink navbar on scroll
+            const navbar = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                navbar.classList.add('h-16');
+                navbar.classList.remove('h-20');
+            } else {
+                navbar.classList.add('h-20');
+                navbar.classList.remove('h-16');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
